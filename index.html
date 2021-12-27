@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="form-container">
+        <div class="logo">
+            <a href="">
+                <img src="logo-img.png">
+            </a>
+            <h1>MyLibrary</h1>
+        </div>
+    <form class="form">
+        <div class="form-input">
+            <label for="title">Book title</label>
+            <input class="title" data-book="title" placeholder="Book title" type="text">
+        </div>
+        <div class="form-input">
+            <label for="author">Author</label>
+            <input class="author" data-book="author" placeholder="Book author" type="text">
+        </div>
+        <div class="form-input">
+            <label for="pages">Number of pages</label>
+            <input class="pages" placeholder="Pages" type="text">
+        </div>
+        <div class="two columns form-input">
+            <label for="read">Status</label>
+            <select name="read" class="read" class="u-full-width">
+              <option value="Read">Read</option>
+              <option value="Not read">Not read</option>
+            </select>
+        </div>
+        <div>
+            <input class="submit" type="submit">
+        </div>
+    </form>
+    </div>
+    <div class="table-container">
+        <div class="book-info">
+            <p>BOOKS READ: <span id="books-read"></span></p>
+            <p>BOOKS UNREAD: <span id="books-unread"></span></p>
+            <p>TOTAL BOOKS:  <span id="total-books"></span></p>
+        </div>
+        <div class="tables">
+        <table class="table">
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </tr>
+            <tbody class="table-body"></tbody>
+        </table>
+        </div>
+        <div class="footer-container">
+            <footer>
+            <div>
+                <p>The Odin Project - MyLibrary</p>
+            </div>
+            <div class="socials">
+                <a href="https://twitter.com/" target="_blank"
+                  ><img
+                    src="./tw.png"
+                    alt="Twitter"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.instagram.com/suljkanovic.amir/" target="_blank"
+                  ><img
+                    src="./ig.png"
+                    alt="Instagram"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://www.linkedin.com/in/amir-suljkanovi%C4%87-843230209/" target="_blank"
+                  ><img
+                    src="./lnkd.png"
+                    alt="Linkedin"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://github.com/SuljkanovicAmir" target="_blank"
+                  ><img src="./gith.png" alt="Github" class="socicon"
+                /></a>
+            </div>          
+             </footer>
+        </div>
+    </div>
+   
+</div>
+</body>
+</html>

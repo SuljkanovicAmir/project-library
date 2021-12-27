@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'SoDoSans';
+    src: url('./SoDo-Sans-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'GTWalsheimPro-Light';
+    src: url('./GTWalsheimPro-Light.ttf')
+}
+
+
+
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-y:hidden;
+}
+
+
+.form-container {
+    min-width: 370px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fffbf3;
+    z-index: 1;
+}
+
+.form {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    min-width: 80%;
+    font-size: 24px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    background-color: white;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+.form input {
+    width: 240px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-left: 5px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.form label {
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.two label {
+    text-align: center;
+    padding-left: unset;
+}
+
+.logo  {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+.logo h1 {
+    font-size: 2.2em;
+}
+
+.read {
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.submit {
+    border-radius: 10px !important;
+    width: 100px !important;
+    padding: 10px 0px!important;
+    font-size: 18px;
+    border: none;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    height: unset !important;
+    border: none!important;
+    color: white !important;
+    background-color: black;
+    margin-top: 30px;
+}
+.submit:hover {
+    cursor: pointer !important;
+    background-color: darkslategrey !important;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    gap: 20px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 0.1);
+}
+
+.table-container th {
+    font-size: 1.5em;
+    font-family: 'GTWalsheimPro-Light';
+    border: 1px solid black;
+    width: 230px;
+    height: 70px;
+    background-color: white;
+    color: black;
+}
+
+ 
+.table-container td {
+    font-size: 1.1em;
+    font-family: 'GTWalsheimPro-Light';
+    font-weight: 550;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    word-break: break-word;
+  }
+  table td, table th {
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+  }
+  table tr:first-child th {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+  }
+  table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
+  }
+
+table button {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #131313;
+    color: white;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    
+}
+
+table button:hover {
+    cursor: pointer !important;
+    background-color: rgb(121, 165, 165) !important;
+    transform: scale(1.1);
+}
+
+.book-info {
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+}
+.book-info p {
+    font-size: 1.6em;
+    font-family: 'GTWalsheimPro-Light';
+}
+
+.delete {
+    padding: unset;
+    border: none;
+    background-color: unset;
+}
+.delete-img:hover {
+    cursor: pointer !important;
+    background-color: unset !important;
+    transform: scale(1.2);
+}
+.delete-img {
+    width: 25px;
+    height: auto;
+}
+
+.footer-container {
+    height: 65px;
+    position: fixed;
+    bottom: 0px;
+    width: 120%;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: 'GTWalsheimPro-Light';
+}
+
+.socicon {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .socials {
+    position: fixed;
+    right: 2%;
+  }
+
+  
