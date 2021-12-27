@@ -148,7 +148,7 @@ function showBooks () {
             <td>${book.author}</td>
             <td>${book.pages}</td>
             <td><button class="read-button">${book.read}</button></td>
-            <td><img class='delete-img' value='delete' src="delete-button-svgrepo-com.svg"></td>
+            <td><img class='delete-img' value='delete' src="./styles/delete-button-svgrepo-com.svg"></td>
         </tr>
         `;
         tableBody.insertAdjacentHTML("afterbegin", htmlBook);
