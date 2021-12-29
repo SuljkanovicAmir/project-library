@@ -155,7 +155,9 @@ textarea:focus, input:focus{
     padding: 15px 10px;
     text-align: center;
 }
-
+.tables {
+    padding-right: 15px;
+}
 table {
     border-collapse: collapse;
     background-color: #f9f9f9;
@@ -260,4 +262,187 @@ footer p {
     right: 2%;
   }
 
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5) {
+      width: 120px !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____________________
+
+    MEDIA SCREEN BELOW
+
+  ______________________*/
+
+  @media screen and (min-width:768px) and (max-width: 1148px) {
+    
+    /* Form container */
+    
+    .form-container {
+        min-width: 280px;
+    }
+    .form{
+        font-size: 20px;
+    }
+    .form input {
+        width: 180px;
+        font-size: 14px;
+    }
+    
+    input::placeholder {
+        font-size: 13px;
+      }
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .logo h1 {
+        font-size: 2em;
+    }
+    .read,
+    .submit {
+        font-size: 14px;
+    }
+    .read {
+        width: 120px;
+    }
+    .submit {
+        width: 70px;
+    }
+
+
+    /* Table container  */
+
+    .table-container th {
+        font-size: 1.1em;
+        width: 155px;
+        height: 60px;
+    }
+    
+     
+    .table-container td {
+        font-size: 1em;
+        padding: 8px 8px;
+    }
+    table button {
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+    .book-info {
+        gap: 50px;
+    }
+    .book-info p {
+        font-size: 1.1em;
+    }
+    .delete-img {
+        width: 20px;
+        height: auto;
+    }
+    footer p {
+       visibility: hidden;
+    }
+    th:nth-child(3),
+    th:nth-child(4),
+    th:nth-child(5) {
+        width: 80px !important;
+    }
   
+    
+    
+  }
+
+  @media screen and (min-width:572px) and (max-width: 768px) {
+        
+    /* Form container */
+    
+    .form-container {
+        min-width: 250px;
+    }
+    .form{
+        font-size: 18px;
+    }
+    .form input {
+        width: 180px;
+        font-size: 12px;
+    }
+    
+    input::placeholder {
+        font-size: 11px;
+      }
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .logo h1 {
+        font-size: 1.7em;
+    }
+    .read,
+    .submit {
+        font-size: 12px;
+    }
+    .read {
+        width: 100px;
+    }
+    .submit {
+        width: 50px;
+    }
+
+
+    /* Table container  */
+
+    .table-container th {
+        font-size: 1em;
+        width: 120px;
+        height: 50px;
+    }
+    
+     
+    .table-container td {
+        font-size: 0.9em;
+        padding: 6px 6px;
+    }
+    table button {
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+   
+    .book-info {
+        gap: 40px;
+    }
+    .book-info {
+        display: flex;
+        gap: unset;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .book-info p {
+        font-size: 1.3em;
+        font-family: 'GTWalsheimPro-Light';
+        margin: 10px;
+    }
+    .book-info p {
+        font-size: 1.1em;
+    }
+    .delete-img {
+        width: 15px;
+        height: auto;
+    }
+    footer p {
+        visibility: hidden;
+     }
+     
+  }
