@@ -286,6 +286,9 @@ footer p {
 
   ______________________*/
 
+
+
+  
   @media screen and (min-width:768px) and (max-width: 1148px) {
     
     /* Form container */
@@ -364,85 +367,88 @@ footer p {
     
   }
 
-  @media screen and (min-width:572px) and (max-width: 768px) {
-        
-    /* Form container */
+  
+
+
+
+
+
+
+  @media screen and (max-width:768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        overflow-y:hidden;
+    }
     
     .form-container {
-        min-width: 250px;
+        min-width: 100%;
+        padding-bottom: 10px;
     }
-    .form{
-        font-size: 18px;
+    .table-container {
+        min-height: 850px;
+        padding: 50px 5px;
     }
-    .form input {
-        width: 180px;
-        font-size: 12px;
+    .tables {
+        padding-right: unset;
     }
-    
-    input::placeholder {
-        font-size: 11px;
-      }
-    .logo img {
-        width: 55px;
-        height: 55px;
-    }
-    
-    .logo h1 {
-        font-size: 1.7em;
-    }
-    .read,
-    .submit {
-        font-size: 12px;
-    }
-    .read {
-        width: 100px;
-    }
-    .submit {
-        width: 50px;
-    }
-
-
-    /* Table container  */
 
     .table-container th {
-        font-size: 1em;
-        width: 120px;
+        font-size: 1.1em;
         height: 50px;
     }
-    
-     
     .table-container td {
-        font-size: 0.9em;
-        padding: 6px 6px;
+        font-size: 1em;
+        font-weight: 580;
+        padding: 10px 5px;
+        text-align: center;
     }
     table button {
-        padding: 3px 5px;
-        font-size: 12px;
+        font-size: 13px;
+        padding: 7px 6px;
+     }
+    .delete-img {
+        width: 22px;
+    }
+
+    .book-info {
+        gap: 35px;
+        padding-bottom: 30px;
+    }
+    .book-info p {
+        font-size: 1.2em;
     }
    
-    .book-info {
-        gap: 40px;
+    .footer-container {
+        display: none;
     }
-    .book-info {
-        display: flex;
-        gap: unset;
-        flex-direction: column;
-        align-self: flex-start;
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1440px) {
+    .form input {
+        width: 260px;
     }
-    .book-info p {
-        font-size: 1.3em;
-        font-family: 'GTWalsheimPro-Light';
-        margin: 10px;
+    input::placeholder {
+        font-size: 17px;
+        font-style: italic;
+      }
+
+      .footer-container {
+        height: 75px;
     }
-    .book-info p {
-        font-size: 1.1em;
+    .footer-container p {
+        font-size: 18px;
     }
-    .delete-img {
-        width: 15px;
+    .socicon {
+        width: 2em;
         height: auto;
     }
-    footer p {
-        visibility: hidden;
-     }
-     
   }
