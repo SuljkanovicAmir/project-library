@@ -385,6 +385,11 @@ footer p {
         min-width: 100%;
         padding-bottom: 10px;
     }
+    .read {
+       background-color: white !important;
+    }
+
+
     .table-container {
         min-height: 850px;
         padding: 50px 5px;
@@ -422,6 +427,8 @@ footer p {
     .footer-container {
         display: none;
     }
+
+
   }
 
 
