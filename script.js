@@ -113,7 +113,7 @@ function Book(title, author, pages, read) {
 
 
 function addBookToLibrary(book) {
-    if ($title.value.length === 0 || $author.value.length === 0 || $read.value.length === 0) {
+    if ($title.value.length === 0 || $author.value.length === 0 || $pages.value.length === 0) {
         alert("Please, fill all the fields");
         return;
     }

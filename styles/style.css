@@ -269,6 +269,7 @@ footer p {
   }
 
 
+  
 
 
 
@@ -379,46 +380,54 @@ footer p {
         display: flex;
         flex-direction: column;
         overflow-y:hidden;
+        background-color: #fffbf3;
     }
     
     .form-container {
-        min-width: 100%;
-        padding-bottom: 10px;
+        padding: 70px 15px 10px 15px;
+        overflow-x: hidden;
+        min-width: unset;
+        
     }
     .read {
        background-color: white !important;
     }
-
+    .form {
+        box-sizing: border-box;
+        max-width: 400px !important;
+        width: 100%;
+        min-width: 290px ;
+    }
 
     .table-container {
         min-height: 850px;
-        padding: 50px 5px;
+        padding: 70px 15px;
+        background-color: white;
     }
+    
     .tables {
-        padding-right: unset;
+        width: 100%; 
+        padding: unset !important;
     }
 
     .table-container th {
         font-size: 1.1em;
         height: 50px;
     }
-    .table-container td {
-        font-size: 1em;
-        font-weight: 580;
-        padding: 10px 5px;
-        text-align: center;
-    }
+   
     table button {
         font-size: 13px;
-        padding: 7px 6px;
+        padding: 6px 10px;
      }
     .delete-img {
         width: 22px;
     }
 
     .book-info {
-        gap: 35px;
+        gap: 24px;
         padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .book-info p {
         font-size: 1.2em;
@@ -428,6 +437,56 @@ footer p {
         display: none;
     }
 
+    table {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 260px;
+        background-color: unset;
+
+    }
+
+    table thead {
+        display: none;
+      }
+      
+      table tr {
+        display: block;
+        margin-bottom: 1.5em;
+        border: 2px solid rgb(163, 121, 121);/* fixati borders */
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      }
+      
+      table td {
+        display: block;
+        font-size: 1.2em !important;
+        text-align: right;
+        
+      }
+      
+      table td::before {
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1em;
+      }
+        td:nth-child(1):before { content:"Title:";}
+        td:nth-child(2):before { content:"Author:";}
+        td:nth-child(3):before { content:"Pages:";}
+        td:nth-child(4):before { content:"Status:";}
+        td:nth-child(5):before { content:"Delete:";}
+      
+        table td, table th {
+            border-top: 0;
+            border: 1px solid rgb(173, 173, 173);
+          }
+          table tr td:last-child,
+          table tr th:last-child {
+            border-right: 0;
+            border-bottom: 0;
+          }
 
   }
 
